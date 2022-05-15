@@ -1,0 +1,418 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: #F4F4F4;
+    letter-spacing: 0.2px;
+}
+
+a{
+    text-decoration: none;
+    color: #212121;
+}
+
+a.url{
+    text-decoration: underline;
+    color:#612BD6;
+}
+
+.container{
+    margin:auto;
+    width: 75%;
+}
+
+.container-65{
+    margin:auto;
+    width: 65%;
+}
+
+/*Utilities CSS*/
+.green{
+    color: #09AA7A;
+}
+
+.text-indent{
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.spacing1{
+    margin-bottom:10px;
+}
+
+.spacing2{
+    margin-bottom:20px;
+}
+
+.spacing4{
+    margin-bottom:40px;
+}
+
+.spacing6{
+    margin-bottom:60px;
+}
+
+.spacing10{
+    margin-bottom:100px;
+}
+.company-text{
+    font-size: 22px;
+    color:#212121;
+    font-weight:500;
+}
+
+.timeline-text{
+    font-size:18px; 
+    margin-bottom:16px; 
+    color: #8a8a8a;
+}
+
+.description-text{
+    font-size:18px;
+    color:#212121;
+}
+
+/*Nav Bar*/
+
+#gradient-bar{
+    background: linear-gradient(104.01deg, #21E8C4 18.43%, #8C66EA 97.48%);
+    height:3.5px;
+}
+
+#navbar {
+    background:#fff;
+    margin-top:0;
+    overflow:auto;
+    display:flex; 
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+    height:60px;
+    padding:0 100px;
+}
+
+#navbar ul{
+    display:flex;
+    list-style:none;
+}
+#navbar a{
+    margin: 10px 20px;
+}
+
+/* #navbar h1{
+    float:left;
+    padding-top:15px;
+} */
+
+/* #navbar ul{
+    float:right;
+    list-style: none;
+} */
+
+/* #navbar ul li{
+    float:left;
+} */
+
+/* #navbar li a{
+    display:block;
+    padding:20px;
+    text-align:center;
+} */
+
+#navbar li a:hover{
+    color: #6b6b6b;
+}
+
+/*Header*/
+.header-spacing{
+    padding: 80px 0px 60px 0px;
+}
+
+.header-text{
+    font-size: 30px;
+    color:#212121;
+}
+
+.secondary-header-text{
+    font-size:20px; 
+    color: #8a8a8a;
+}
+
+.line{
+    margin-top:20px;
+    width:72px;
+    border: 0.5px solid #c9c9c9;
+}
+
+/* Company info */
+.company-work{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+    margin-bottom:2rem;
+}
+.company-description{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.company-image img{
+    max-width: 100%;
+    border-radius:16px;
+}
+
+.case-study-image img{
+    max-width: 100%;
+}
+
+.primary-btn{
+background:#F4F4F4;
+border:1.5px solid #212121;
+color:#212121;
+padding:16px;
+text-align:center;
+width:180px;
+border-radius: 8px;
+}
+
+.primary-btn:hover{
+    background:#fff;
+}
+
+@media screen and (max-width:1079px){
+    .company-work{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:2rem;
+    }
+}
+
+
+/* Case study grids*/
+@media screen and (min-width: 1080px){
+.case-studies{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 2rem;
+    margin-bottom:4rem;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:1079px) {
+    .case-studies{ 
+    display:grid;
+    gap:1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:5rem;
+    }
+
+    .seventy-full-image{
+        width:90%;   
+    }
+
+    .container{
+        margin:auto;
+        width: 85%;
+    }
+
+    .container-65{
+        margin:auto;
+        width: 80%;
+    }
+    #navbar {
+        padding:0px 40px;
+
+}
+}
+
+@media screen and (max-width:479px){
+    .case-studies{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:0.75rem;
+    margin-bottom:4rem;
+}
+
+.seventy-full-image{
+    width:90%;   
+}
+
+    #navbar{
+        flex-direction:column;
+        height:100px;
+    }
+    .logo{
+        margin-top:10px;
+    }
+    #navbar li{
+        margin-bottom:10px;
+    }
+
+    .container-65{
+        margin:auto;
+        width: 80%;
+    }
+}
+
+
+
+
+.body-primary-text{
+    font-size: 22px;
+    font-weight:500;
+    color:#363636;
+    line-height:28px;
+    margin-bottom:16px;
+}
+
+.case-study-primary-text{
+    font-size: 18px;
+    font-weight:500;
+    color:#363636;
+    margin-bottom:12px;
+}
+
+.body-secondary-text{
+    font-size: 18px;
+    color:#4f4f4f;
+    line-height:24px;
+}
+
+.case-study-secondary-text{
+    font-size: 16px;
+    color:#4f4f4f;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height:100%;
+    border-radius:8px;
+  }
+  
+.card-image{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+} 
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card-text{
+      padding:20px;
+  }
+
+  .card a{
+      z-index:1;
+  }
+
+/*Case studies page*/
+
+.full-image{
+    display: block;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;   
+}
+
+.seventy-full-image{
+    display: block;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;   
+}
+.phone-frame-solo{
+    display: block;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:28%;
+}
+
+@media screen and (max-width:479px){
+    .phone-frame-solo{
+        width:80%;
+    }
+}
+
+.image-subtitle{
+    color:#612BD6;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    margin-top:10px;
+}
+
+.confidential-text{
+    text-align:center;
+    background:#EBE2FF;
+    max-width:100%;
+    padding: 20px 0 20px 0;
+    margin-bottom:60px;
+}
+
+.case-study-point{
+    background:#E2F0F3;
+    max-width:100%;
+    padding: 20px;
+    margin-bottom:20px;
+}
+
+ /*About page*/
+.leisure-image{
+    aspect-ratio: 1/1;
+    object-fit:cover;
+    height:320px;
+    border-radius:6px;
+}
+
+.before-after{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:6rem;
+        margin-bottom:2rem;
+        width:60%;
+        margin:auto; 
+}
+
+@media screen and (max-width:1079px){
+    .before-after{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:2rem;
+    }
+}
+
+  /*Footer*/
+  .footer{
+      display:flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom:20px;
+      color:#C9C9C9;
+  }
+  .footer li{
+    list-style: none; 
+    margin: 0px 10px;
+  }
+
+  .footer-logo{
+      width:26px;
+  }
+  
+  .footer ul{
+      display:flex;
+  }
+
+
+   
